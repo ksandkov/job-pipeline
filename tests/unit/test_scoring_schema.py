@@ -5,9 +5,7 @@ from jobpipeline.scoring.schema import ScoreResult
 
 
 def test_valid_score():
-    r = ScoreResult(
-        score=80, archetype=28, must_haves=26, experience=18, domain=8, rationale="ok"
-    )
+    r = ScoreResult(score=80, archetype=28, must_haves=26, experience=18, domain=8, rationale="ok")
     assert r.tier_outcome() == "keep"
 
 

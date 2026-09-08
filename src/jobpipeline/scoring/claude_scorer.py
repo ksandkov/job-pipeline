@@ -3,6 +3,7 @@
 The system rubric is large and identical across calls, so it is marked with
 cache_control to cut cost/latency on every request after the first.
 """
+
 from __future__ import annotations
 
 import json

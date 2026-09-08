@@ -1,4 +1,5 @@
 """Read API for scored jobs."""
+
 from __future__ import annotations
 
 from fastapi import APIRouter, Depends, Query

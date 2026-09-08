@@ -1,5 +1,6 @@
 """End-to-end pipeline run with fully mocked externals."""
-from unittest.mock import MagicMock, patch
+
+from unittest.mock import patch
 
 from jobpipeline.pipeline import dedupe
 

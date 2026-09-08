@@ -1,4 +1,5 @@
 """Minimal HTML view of the top jobs (ported from the old Flask app)."""
+
 from __future__ import annotations
 
 from fastapi import APIRouter, Depends

@@ -1,4 +1,5 @@
 """Orchestrate one pipeline run: fetch -> dedupe -> score -> store."""
+
 from __future__ import annotations
 
 import time

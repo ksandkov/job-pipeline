@@ -1,4 +1,5 @@
 """Fetch jobs from LinkedIn/Indeed/etc via the JobSpy library."""
+
 from __future__ import annotations
 
 from ..logging import get_logger

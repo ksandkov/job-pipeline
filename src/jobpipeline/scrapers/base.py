@@ -1,4 +1,5 @@
 """Scraper interface. Each source returns a list of normalized job dicts."""
+
 from __future__ import annotations
 
 from typing import Protocol

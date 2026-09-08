@@ -4,6 +4,7 @@ hiring.cafe is a Next.js app; the JSON behind each page lives at a
 `/_next/data/<build-id>/...json` URL. We use curl_cffi to mimic a browser TLS
 fingerprint, since a plain requests call gets blocked.
 """
+
 from __future__ import annotations
 
 from ..logging import get_logger

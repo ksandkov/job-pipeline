@@ -1,11 +1,12 @@
 """Command-line entrypoint: `jobpipeline run`, `jobpipeline stats`."""
+
 from __future__ import annotations
 
 import typer
 
 from .config import settings
-from .db.session import session_scope
 from .db.models import Job
+from .db.session import session_scope
 from .pipeline import run as run_pipeline
 from .scrapers.hiringcafe_source import HiringCafeSource
 from .scrapers.jobspy_source import JobSpySource

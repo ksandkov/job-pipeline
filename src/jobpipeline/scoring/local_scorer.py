@@ -4,6 +4,7 @@ Cheap pass to discard obviously-irrelevant jobs before spending Claude tokens.
 Falls open (keeps the job) if the local tier is disabled or unreachable, so a
 broken Ollama never silently drops everything.
 """
+
 from __future__ import annotations
 
 import httpx

@@ -1,4 +1,5 @@
 """Pydantic model for a scoring result."""
+
 from __future__ import annotations
 
 from pydantic import BaseModel, Field

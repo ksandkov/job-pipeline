@@ -31,11 +31,11 @@ metrics contract that the `observability` repo depends on.
 
 ## Run it
 ```bash
-cp .env.example .env         # fill ANTHROPIC_API_KEY at minimum
-docker compose up -d         # app + postgres
-alembic upgrade head         # create tables
-docker compose exec app jobpipeline run   # one pipeline pass
-open http://localhost:8000/  # ranked shortlist
+cp .env.example .env                            # set ANTHROPIC_API_KEY; use @postgres:5432 as the DB host for compose
+docker compose up -d --build                    # app + postgres
+docker compose exec app alembic upgrade head    # create tables
+docker compose exec app jobpipeline run         # one pipeline pass
+open http://localhost:8000/                     # ranked shortlist
 ```
 Local dev without Docker:
 ```bash

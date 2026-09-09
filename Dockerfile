@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl && \
 WORKDIR /app
 COPY --from=builder /wheels /wheels
 RUN pip install --no-cache-dir /wheels/*.whl && rm -rf /wheels
+COPY alembic.ini ./
+COPY migrations ./migrations
 USER appuser
 EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=3s --retries=3 \

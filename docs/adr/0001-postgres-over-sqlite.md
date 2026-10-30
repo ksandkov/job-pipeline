@@ -13,4 +13,4 @@ throwaway local runs.
 
 ## Consequences
 - Concurrency and indexing are handled properly.
-- One more stateful component to run and back up (covered by infra-baseline).
+- One more stateful component to run and back up.

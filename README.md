@@ -20,7 +20,8 @@ scrapers (JobSpy, hiring.cafe) → dedupe → LocalScorer (Qwen/Ollama, fail-ope
                                                               └► /metrics (Prometheus)
 ```
 See `docs/architecture.md` for the full diagram and `docs/metrics.md` for the
-metrics contract that the `observability` repo depends on.
+pipeline metrics. Deployment, monitoring and alerts live in
+[platform-infra](https://github.com/ksandkov/platform-infra).
 
 ## Key decisions (and why)
 - **Tiered scoring** — cheap local filter before Claude saves tokens. ADR 0003.
